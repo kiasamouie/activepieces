@@ -5,7 +5,7 @@ services:
     ports:
       - "8081:80"
     volumes:
-      - ~/.activepieces:/root/.activepieces
+      - ./data/activepieces:/root/.activepieces
     environment:
       AP_QUEUE_MODE: MEMORY
       AP_DB_TYPE: SQLITE3
